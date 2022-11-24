@@ -61,15 +61,17 @@ php_opcache_revalidate_path: "0"
 php_opcache_revalidate_freq: "2"
 php_opcache_max_file_size: "0"
 php_opcache_blacklist_filename: ""
+php_opcache_template: "opcache.ini.j2"
 
 # APCu settings.
 php_enable_apc: true
 php_apc_shm_size: "96M"
 php_apc_enable_cli: "0"
-
+php_apc_template: "apc_ini.j2"
 # If this is set to false, none of the following options will have any effect.
 # Any and all changes to /etc/php.ini will be your responsibility.
 php_use_managed_ini: true
+php_php_ini_template: "php.ini.j2"
 
 php_expose_php: "On"
 php_memory_limit: "256M"
